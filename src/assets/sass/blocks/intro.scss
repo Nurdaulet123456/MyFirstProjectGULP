@@ -1,0 +1,31 @@
+.intro__text {
+    font-size: 1.2rem;
+    color: $gray_dark;
+}
+
+.intro__title {
+    font-size: 3.2rem;
+    line-height: 1.2;
+    color: $black;
+    font-weight: 600;
+
+    margin-bottom: .5rem;
+
+    @media (max-width: 575px) {
+        font-size: 2rem;
+    }
+}
+
+.intro__subtitle {
+    font-size: 1.6rem;
+    color: $black;
+    font-weight: 400;
+
+    span {
+        color: $pink;
+    }
+
+    @media (max-width: 575px) {
+        font-size: 1.2rem;
+    }
+}

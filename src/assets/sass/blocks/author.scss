@@ -1,0 +1,17 @@
+.author {
+    position: absolute;
+    right: 10rem;
+    bottom: 0;
+    z-index: 2;
+
+    @media (max-width: 1330px) {
+        right: 2rem;
+    }
+
+    
+    @media (max-width: 575px) {
+        display: none;
+    }
+}
+
+

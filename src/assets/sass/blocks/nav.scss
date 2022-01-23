@@ -1,0 +1,28 @@
+.nav {
+    display: flex;
+    font-size: 1rem;
+}
+
+
+.nav__link {
+    padding: .4rem 1.5rem;
+    margin-right: 1rem;
+
+    color: $black;
+    text-decoration: none;
+    font-weight: 500;
+
+    transition: background .1s linear;
+
+    border-radius: 20px;
+
+    &:hover {
+        background-color: darken($gray, 0.9);
+    }
+
+    &.active {
+        color: $white;
+
+        background-color: $pink;
+    }
+}   

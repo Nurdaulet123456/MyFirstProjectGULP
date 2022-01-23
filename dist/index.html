@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow, noodp">
+    <meta name="googlebot" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    
+    <title>HomePage</title>
+    
+    <script 
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    </script>
+</head>
+<body>
+
+    <!-- Sprite -->
+    <svg style="display: none;">
+    
+        <symbol id="close" viewBox="0 0 24 24">
+            <g>
+                <path d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z"/>
+            </g>
+        </symbol>
+    
+        <symbol id="layers" viewBox="0 0 421.59 421.59">
+            <g>
+                <path d="M400.491,291.098l-58.865-36.976l58.864-36.971c2.185-1.372,3.511-3.771,3.511-6.351s-1.326-4.979-3.511-6.352
+    			l-58.865-36.977l58.862-36.973c2.185-1.373,3.511-3.771,3.511-6.351s-1.326-4.979-3.511-6.351L214.783,1.149
+    			c-2.438-1.532-5.54-1.532-7.979,0L21.1,117.796c-2.185,1.373-3.511,3.771-3.511,6.351c0,2.58,1.326,4.979,3.511,6.351
+    			l58.861,36.972l-58.859,36.978c-2.185,1.373-3.51,3.771-3.51,6.351c0,2.58,1.326,4.979,3.511,6.351l58.859,36.97l-58.859,36.979
+    			c-2.185,1.372-3.51,3.771-3.51,6.351c0,2.58,1.326,4.979,3.511,6.351l185.7,116.64c1.22,0.766,2.604,1.149,3.989,1.149
+    			s2.77-0.383,3.989-1.149L400.491,303.8c2.185-1.372,3.511-3.771,3.511-6.351C404.002,294.869,402.676,292.47,400.491,291.098z
+    			 M39.189,124.147l171.605-107.79l171.604,107.79l-171.604,107.79L39.189,124.147z M39.191,210.798l54.869-34.471l112.744,70.818
+    			c1.219,0.766,2.604,1.149,3.989,1.149c1.385,0,2.77-0.383,3.989-1.149l112.742-70.817l54.875,34.47L210.792,318.582
+    			L39.191,210.798z M210.792,405.232L39.191,297.448l54.87-34.472l112.742,70.814c1.22,0.766,2.604,1.149,3.989,1.149
+    			s2.77-0.383,3.989-1.149l112.744-70.812l54.876,34.47L210.792,405.232z"/>
+            </g>
+        </symbol>
+    
+        <symbol id="front" viewBox="0 0 389.981 389.981">
+            <g>
+                <path d="M145.407,248.988l-2.775,26.209c-0.224,2.115,0.46,4.225,1.883,5.806c1.422,1.581,3.449,2.483,5.576,2.483h79.301
+    		c2.126,0,4.153-0.903,5.576-2.483c1.422-1.581,2.106-3.691,1.883-5.806l-2.775-26.209h98.777c15.374,0,27.881-12.507,27.881-27.881
+    		V27.881C360.733,12.507,348.225,0,332.852,0H40.63C25.256,0,12.749,12.507,12.749,27.881v193.226
+    		c0,15.374,12.507,27.881,27.881,27.881H145.407z M221.055,268.487h-62.629l2.064-19.499h58.5L221.055,268.487z M40.63,15h292.222
+    		c7.103,0,12.881,5.778,12.881,12.881V197.99H27.749V27.881C27.749,20.778,33.527,15,40.63,15z M27.749,221.107v-8.117h317.983
+    		v8.117c0,7.103-5.778,12.881-12.881,12.881H40.63C33.527,233.988,27.749,228.21,27.749,221.107z"/>
+    	<path d="M332.645,333.876c1.36-2.24,1.453-5.027,0.244-7.352l-14.813-28.499c-1.291-2.483-3.856-4.041-6.655-4.041H62.061
+    		c-2.798,0-5.364,1.558-6.655,4.041l-14.813,28.499c-1.208,2.325-1.116,5.112,0.244,7.352s3.791,3.607,6.411,3.607h278.986
+    		C328.854,337.484,331.285,336.116,332.645,333.876z M59.599,322.484l7.016-13.499h240.251l7.017,13.499H59.599z"/>
+    	<path d="M345.733,350.982h-12c-17.368,0-31.499,14.13-31.499,31.499c0,4.142,3.358,7.5,7.5,7.5h59.997c4.142,0,7.5-3.358,7.5-7.5
+    		C377.232,365.113,363.102,350.982,345.733,350.982z M319.04,374.981c2.735-5.337,8.295-8.999,14.693-8.999h12
+    		c6.398,0,11.958,3.662,14.694,8.999H319.04z"/>
+            </g>
+        </symbol>
+    
+        <symbol id="backend" viewBox="0 0 490 490">
+            <g>
+                <path d="M480,47.5H270c-5.522,0-10,4.478-10,10v5H10c-5.523,0-10,4.478-10,10v250c0,5.522,4.477,10,10,10h145v60h-15
+    				c-5.523,0-10,4.478-10,10v30c0,5.522,4.477,10,10,10h340c5.522,0,10-4.478,10-10v-375C490,51.978,485.522,47.5,480,47.5z
+    				 M260,422.5H150v-10h110V422.5z M260,392.5h-85v-60h15v40c0,5.522,4.477,10,10,10h60V392.5z M260,362.5h-50v-30h50V362.5z
+    				 M260,282.5H50v-170h210V282.5z M260,92.5H40c-5.522,0-10,4.478-10,10v190c0,5.522,4.478,10,10,10h220v10H20v-230h240V92.5z
+    				 M435,422.5H315v-115h110v-20H315v-15h120V422.5z M470,422.5h-15v-160c0-5.522-4.478-10-10-10H305c-5.522,0-10,4.478-10,10v160
+    				h-15v-185h190V422.5z M470,217.5H280v-85h190V217.5z M470,112.5H280v-45h190V112.5z"/>
+    			<rect x="295" y="147.5" width="160" height="20"/>
+    			<rect x="430" y="182.5" width="25" height="20"/>
+    			<rect x="390" y="182.5" width="25" height="20"/>
+    			<rect x="295" y="182.5" width="25" height="20"/>
+    			<rect x="295" y="77.5" width="160" height="20"/>
+    			<path d="M375,332.5c-19.299,0-35,15.701-35,35s15.701,35,35,35s35-15.701,35-35S394.299,332.5,375,332.5z M375,382.5
+    				c-8.272,0-15-6.728-15-15c0-8.272,6.728-15,15-15c8.272,0,15,6.728,15,15C390,375.772,383.272,382.5,375,382.5z"/>
+            </g>
+        </symbol>
+    
+    	<symbol id="left" viewBox="0 0 25.451 25.451">
+    		<g>
+    			<path d="M20.982,0.521v2.006L8.57,12.315c-0.121,0.101-0.195,0.251-0.195,0.41s0.074,0.311,0.195,0.41l12.412,9.79v2.005
+    			c0,0.199-0.115,0.383-0.297,0.469c-0.178,0.086-0.395,0.064-0.549-0.061L4.664,13.136c-0.122-0.1-0.194-0.251-0.194-0.41
+    			s0.072-0.31,0.194-0.41L20.136,0.113c0.154-0.126,0.371-0.148,0.549-0.061C20.866,0.139,20.982,0.322,20.982,0.521z"/>
+    		</g>
+    	</symbol>
+    
+    	<symbol id="right" viewBox="0 0 330 330">
+    		<g>
+    			<path id="XMLID_222_" d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001
+    	c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213
+    	C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606
+    	C255,161.018,253.42,157.202,250.606,154.389z"/>
+    		</g>
+    	</symbol>
+    
+    </svg>
+    <div class="page">
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+
+            <div class="row header__row">
+                <div class="col-lg-2">
+                    <a class="logo" href="#">
+                        <span class="logo__prefix">in</span>Web
+                    </a>
+                </div>
+                <div class="col-lg-8">
+                    <nav class="nav">
+                        <a class="nav__link  active" href="index.html">Главная</a>
+                        <a class="nav__link" href="services.html">Услуги</a>
+                        <a class="nav__link" href="portfolio.html">Портфолио</a>
+                    </nav>
+                </div>
+                <div class="col-lg-2">
+                <div class="lang">
+                    <a class="lang__item active" href="#">RU</a>
+                    <a class="lang__item" href="#">EN</a>
+                </div>
+                </div>
+            </div>
+
+        </div> <!-- /.header__inner -->
+    </div> <!-- /.container -->
+</header> <!-- /.header -->
+
+<!-- Content -->
+<div class="content">
+<div class="container">
+    <div class="intro">
+        <div class="intro__text">Меня зовут</div>
+        <div class="intro__title">Нурдаулет Торегалиев</div>
+        <div class="intro__subtitle">я занимаюсь <span>веб-дизайном</span> и <span>созданием сайтов</span></div>
+
+        <div class="row  contacts__row">
+            <div class="col-lg-3">
+                <a class="btn  btn--pink" href="#" data-toggle="modal" data-target="#request-modal">Оставить заявку</a>
+            </div>
+
+            <div class="col-lg-9">
+                <ul class="contacts">
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="tel:+7891123345">+789-112-3345</a>
+                    </li>
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="mailto:hello@inweb.com">hello@inweb.com</a>
+                    </li>
+                </ul>
+            </div> 
+        </div> <!-- /. row -->
+    </div> <!-- /.intro -->
+</div> <!-- /.container -->
+
+
+<img class="author" src="assets/img/man.png" alt="">
+<div class="circle"></div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        daoudasd
+    </div>
+</footer></div>
+
+<!-- Modal -->
+
+<div class="modal fade" id="request-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg class="modal__close-item">
+                <use xlink:href="#close"></use>
+            </svg>
+        </button>
+
+        <div class="modal__title">Оставить заявку</div>
+        <div class="modal__text">Заполните форму ниже и я свяжусь с вами в ближайшее время!</div>
+
+        <form class="form" action="/" method="post">
+            <div class="form__group">
+                <input class="input" type="text" name="text" placeholder="Ваше имя" required>
+            </div>
+            <div class="form__group">
+                <input class="input" type="email" name="email" placeholder="Ваш e-mail" required>
+            </div>
+            <div class="form__group">
+                <input class="input" type="tel" name="tel" placeholder="Ваш телефон" required>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <button class="btn btn--pink" type="submit">Оставить заявку</button>
+                </div>
+                
+                <div class="col-lg-6">
+                    <ul class="contacts">
+                        <li class="contacts__item">
+                            <a class="contacts__link" href="tel:+7891123345">+789-112-3345</a>
+                        </li>
+                        <li class="contacts__item">
+                            <a class="contacts__link" href="mailto:hello@inweb.com">hello@inweb.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </form>
+
+      </div> <!-- /.modal__content -->
+    </div> <!-- /.modal-dialog -->
+  </div> <!-- /.modal -->
+<script src="assets/js/app.min.js"></script>
+
+</body>
+</html>

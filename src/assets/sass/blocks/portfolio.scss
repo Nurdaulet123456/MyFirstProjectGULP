@@ -1,0 +1,118 @@
+.portfolio {
+    position: relative;
+}
+
+.portfolio__slider {
+    position: relative;
+    height: 270px;
+    overflow: hidden;
+
+    &::after {
+        content: "";
+        display: block;
+
+        width: 100%;
+        height: 100%;
+        background: $white url("../img/ajax-loader.gif") center no-repeat;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+
+    &.slick-initialized {
+        overflow: visible;
+        &::after {
+            display: none;
+        }
+    }
+}
+
+.portfolio__item {
+    max-width: 540px;
+    background-color: #000;
+
+    overflow: hidden;
+
+    position: relative;
+
+    &:hover {
+        .pt_img {
+            opacity: .3;
+        }
+
+        .portfolio__title {
+            transform: translateX(0);
+        }
+    }
+}
+
+.pt_img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: opacity .2s linear;
+}
+
+.pt_link {
+    display: block;
+}
+
+.portfolio__title {
+    width: 100%;
+
+    font-size: 1.6rem;
+    color: $white;
+
+    padding: 1.2rem;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    transform: translateX(100%);
+    transition: transform 0.4s linear;
+    pointer-events: none;
+}
+
+.pt__arrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+
+    &--prev {
+        right: -2rem;
+        transform: translateY(-50%);
+    }
+
+    &--next {
+        left: -2rem;
+        transform: translateY(-50%);
+    }
+
+    &:hover {
+        .arrow__icon {
+            fill: $pink;
+        }
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.arrow__icon {
+    width: 30px;
+    height: 40px;
+
+    fill: #c5c5c5;
+
+    transition: fill .2s linear;
+}
